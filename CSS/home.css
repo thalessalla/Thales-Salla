@@ -1,0 +1,78 @@
+.bkg-home {
+  background-image: url("../img/bkg-home.jpg");
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #06051b;
+  /* width: 100vw; */
+}
+
+.bkg-home h1 {
+  padding-left: 217px;
+  padding-top: 80px;
+}
+
+.moldura-home {
+  width: 1400px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+
+  /* width: 100%; */
+}
+
+.redes-e-scroll {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-left: 80px;
+  padding-bottom: 80px;
+}
+
+.scroll-down-home {
+  display: flex;
+  align-items: flex-end;
+}
+
+.scroll-down-home p {
+  opacity: 0.6;
+}
+
+.redes-home li {
+  padding-top: 10px;
+}
+
+.redes-home a {
+  opacity: 1;
+}
+
+.redes-home a {
+  transition: all 0.6s;
+}
+
+.redes-home a:hover {
+  opacity: 0.4;
+  padding-left: 5px;
+}
+
+.scroll-down-home img {
+  padding-left: 30px;
+  position: absolute;
+  animation: go-back 1s infinite;
+  opacity: 0.2;
+}
+
+@keyframes go-back {
+  0% {
+    padding-top: 0;
+  }
+  50% {
+    padding-top: 5px;
+  }
+  100% {
+    padding-top: 0px;
+  }
+}

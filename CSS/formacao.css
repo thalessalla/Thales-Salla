@@ -1,0 +1,142 @@
+.formacao {
+  background-color: #06051b;
+}
+
+.h2-formacao {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.h2-formacao {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.conatiner-formacao {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.coluna-cursos {
+  position: relative;
+}
+
+.facul {
+  padding-top: 20px;
+}
+
+.facul::before {
+  content: "";
+  left: -38px;
+  top: 30px;
+  display: inline-block;
+  width: 28px;
+  height: 24px;
+  background-image: url("../img/school.png");
+  position: absolute;
+}
+
+.cursos {
+  position: relative;
+}
+
+.cursos::before {
+  content: "";
+  left: -38px;
+  top: 90px;
+  display: inline-block;
+  width: 34px;
+  height: 24px;
+  background-image: url("../img/curso.png");
+  position: absolute;
+}
+
+.certificados {
+  position: relative;
+}
+
+.certificados::before {
+  content: "";
+  left: -38px;
+  top: 90px;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background-image: url("../img/certificado.png");
+  position: absolute;
+}
+
+.idiomas {
+  position: relative;
+}
+
+.idiomas::before {
+  content: "";
+  left: -38px;
+  top: 90px;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/idiomas.png");
+  position: absolute;
+}
+
+.coluna-cursos p {
+  max-width: 40ch;
+}
+
+.coluna-cursos span {
+  color: #03318c;
+}
+
+.certificados,
+.idiomas,
+.cursos {
+  padding-top: 80px;
+}
+
+.coluna-sobre-formacao {
+  padding-top: 20px;
+}
+
+.coluna-sobre-formacao p {
+  text-align: right;
+}
+
+.coluna-sobre-formacao div {
+  width: 100%;
+  padding-top: 40px;
+  position: relative;
+}
+
+.imagem-abstract {
+  display: flex;
+  justify-content: flex-end;
+  z-index: 2;
+}
+
+.coluna-sobre-formacao div::before {
+  content: "";
+  left: -50px;
+  top: 230px;
+  display: inline-block;
+  width: 159px;
+  height: 159px;
+  background-image: url("../img/Vector.png");
+  position: absolute;
+}
+
+.imagem-abstract::after {
+  content: "";
+  left: 50px;
+  top: 0px;
+  display: inline-block;
+  width: 700px;
+  height: 1000px;
+  background-image: url("../img/shine-1.png");
+  position: absolute;
+  background-repeat: no-repeat;
+  z-index: -1;
+}

@@ -1,0 +1,19 @@
+footer {
+  background: #03318c;
+}
+
+.conatiner-footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -100px;
+}
+
+.conatiner-footer p {
+  color: #fff;
+  font-size: 12px;
+  padding-bottom: 34px;
+}
