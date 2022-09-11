@@ -11,3 +11,17 @@
 @import "./animacao.css";
 @import "../utilidades/cores.css";
 @import "../utilidades/tipografia.css";
+
+@import "CSS/global.css";
+@import "CSS/home.css";
+@import "CSS/menu.css";
+@import "CSS/sobre.css";
+@import "CSS/formacao.css";
+@import "CSS/projetos.css";
+@import "CSS/experiencia.css";
+@import "CSS/habilidades.css";
+@import "CSS/form.css";
+@import "CSS/footer.css";
+@import "CSS/animacao.css";
+@import "utilidades/cores.css";
+@import "utilidades/tipografia.css";
