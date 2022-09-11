@@ -1,15 +1,28 @@
 .header {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 48px 144px;
+  padding: 28px 144px;
+  animation-name: opacity;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  z-index: 1;
 }
 
 .header-menu {
   display: flex;
-  gap: 40px;
+  justify-content: space-between;
   flex-wrap: wrap;
-  justify-content: center;
+}
+
+.header-menu ul {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.header-menu li {
+  padding: 20px;
 }
 
 .hover-underline-animation {
@@ -35,4 +48,74 @@
 .hover-underline-animation:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* Menu scroll */
+
+.container-menu-scroll {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  /* display: none; */
+  height: 0;
+}
+
+.menu-scroll {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 0px 200px;
+  transform: translateY(-60px);
+}
+
+.container-menu-scroll-js {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: block;
+}
+
+.menu-scroll-js {
+  background: rgba(36, 35, 57, 0.568);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.084);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  display: flex;
+  position: sticky;
+  transform: translateY(-4px);
+  top: 0;
+  padding: 4px 200px;
+}
+
+.menu-scroll ul {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  padding-right: 10px;
+  /* padding: -144px; */
+}
+
+.menu-scroll a {
+  text-decoration: none;
+  color: #ececec;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.container-menu-scroll-js {
+  transition: all 1s;
+}
+
+/* .menu-scroll-js {
+  transition: all 1s;
+} */
+
+.menu-scroll-js {
+  transition: all 0.5s;
+}
+
+.menu-scroll {
+  transition: transform 0.2s;
 }

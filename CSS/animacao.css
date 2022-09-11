@@ -1,0 +1,55 @@
+.animacao-azul {
+  filter: blur(70px);
+  transform: translateY(-20%);
+  opacity: 0.6;
+  margin-bottom: 0;
+  position: absolute;
+  width: 1200px;
+  left: -500px;
+}
+
+.animacao-roxo {
+  filter: blur(70px);
+  transform: translateY(20%);
+  opacity: 0.7;
+  margin-bottom: 0;
+  left: -500px;
+  position: absolute;
+  width: 800px;
+  z-index: 1;
+}
+
+.animacao-vermelho {
+  filter: blur(60px);
+  width: 1400px;
+  transform: translateY(-40%);
+  opacity: 0.4;
+  left: -900px;
+  position: absolute;
+}
+
+.container-animacao {
+  position: absolute;
+  left: 50%;
+  /* top: 340px; */
+  top: 35vh;
+  /* opacity: 0; */
+  z-index: -1;
+  animation-name: zoom, opacity;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+}
+
+/* .container-animacao::before {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vw;
+  content: "";
+  opacity: 1;
+  z-index: 1000;
+  pointer-events: none;
+  background: url("../img/noise.gif");
+} */

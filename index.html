@@ -6,61 +6,154 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifólio Thales Salla</title>
+  <link rel="preload" href="css/style.css" as="style">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
+  <div class="container-menu-scroll">
+    <div class="menu-scroll">
+      <a id="logo-nome" href="#topo"> <img src="./img/" </a>
+        <nav>
+          <ul>
+            <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Sobre mim</a></li>
+            <li><a class="hover-underline-animation cor-4 font-1-s" href="./animacao.html">Formação</a></li>
+            <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Projetos</a></li>
+            <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Experiência</a></li>
+          </ul>
+        </nav>
+    </div>
+  </div>
 
 
   <div class="bkg-home">
 
     <div class="conatiner-moldura">
       <div class="moldura-home">
+
         <header class="header">
-          <div>
+
+          <div class="header-menu">
             <a id="logo-nome" href="#topo"> <img src="" </a>
+              <nav>
+                <ul>
+                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Sobre mim</a></li>
+                  <li><a class="hover-underline-animation cor-4 font-1-s" href="./animacao.html">Formação</a></li>
+                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Projetos</a></li>
+                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Experiência</a></li>
+                </ul>
+              </nav>
           </div>
-          <nav class="">
-            <ul class="header-menu">
-              <li>
-                <a class="hover-underline-animation cor-4 font-1-s" href="#">Sobre mim</a>
-              </li>
-              <li>
-                <a class="hover-underline-animation cor-4 font-1-s" href="#">Formação</a>
-              </li>
-              <li>
-                <a class="hover-underline-animation cor-4 font-1-s" href="#">Projetos</a>
-              </li>
-              <li>
-                <a class="hover-underline-animation cor-4 font-1-s" href="#">Experiência</a>
-              </li>
-            </ul>
-          </nav>
+
+
         </header>
-        <h1 class="cor-4 font-2-g">Olá, <br>
-          sou o Thales, <br>
-          desenvolvedor Front-end</h1>
-        <div class="redes-e-scroll">
-          <div class="redes-home">
-            <ul>
-              <li>
-                <a href=""><img src="./img/Linkedin.svg" alt=""></a>
-              </li>
-              <li>
-                <a href=""><img src="./img/Github-icon.png" alt=""></a>
-              </li>
-              <li>
-                <a href=""><img src="./img/email.svg" alt=""></a>
-              </li>
-            </ul>
-          </div>
-          <div class="scroll-down-home">
-            <div>
-              <p class="cor-4 font-1-s">Scroll down</p>
-              <img src="./img/setas.svg" alt="">
-            </div>
+
+
+        <h1 class="type-animation cor-4 font-2-g rellax" data-rellax-speed="3">Olá, <br> sou o Thales, <br>desenvolvedor Front-end</h1>
+
+
+
+        <!-- <div class="redes-e-scroll"> -->
+        <div class="redes-home">
+          <ul>
+            <li>
+              <a href="#"><img src="./img/Linkedin.svg" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/Github-icon.png" alt=""></a>
+            </li>
+            <li>
+              <a href="#"><img src="./img/email.svg" alt=""></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="scroll-down-home">
+          <div>
+            <p class="cor-4 font-1-s">Scroll down</p>
+            <img src="./img/setas.svg" alt="">
           </div>
         </div>
+
+        <!-- Animação -->
+
+        <div class="container-animacao">
+
+
+
+          <div class="animacao-azul">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+              <g transform="translate(167.8823127746582, -13.453407287597656)">
+                <defs>
+                  <linearGradient id="gradient-azul" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgb(5, 131, 242);"></stop>
+                    <stop offset="100%" style="stop-color: rgb(3, 49, 140);"></stop>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradient-azul)">
+                  <animate attributeName="d" dur="8000ms" repeatCount="indefinite" values="M407,279Q399,308,343,296Q287,284,291,312.5Q295,341,279,368.5Q263,396,232.5,406.5Q202,417,188,384Q174,351,172.5,325Q171,299,104.5,294.5Q38,290,62,254.5Q86,219,115,201.5Q144,184,144,147Q144,110,180,120Q216,130,236.5,153.5Q257,177,284,152Q311,127,316,156Q321,185,336,198Q351,211,383,230.5Q415,250,407,279Z;
+                  
+                  M398,270.5Q355,291,342.5,307Q330,323,345,397.5Q360,472,312,435.5Q264,399,244.5,369Q225,339,170.5,383.5Q116,428,121,377.5Q126,327,134.5,298.5Q143,270,153.5,252Q164,234,172,220.5Q180,207,170.5,169.5Q161,132,181,105Q201,78,237,42Q273,6,311.5,27Q350,48,372.5,83Q395,118,354.5,171.5Q314,225,377.5,237.5Q441,250,398,270.5Z;
+                  
+                  M427,278.5Q397,307,366,317.5Q335,328,346.5,397.5Q358,467,315.5,481Q273,495,231.5,478.5Q190,462,197.5,385.5Q205,309,194,300Q183,291,170.5,279Q158,267,149.5,248.5Q141,230,116.5,191Q92,152,148,170.5Q204,189,210.5,161.5Q217,134,243.5,84Q270,34,290.5,80.5Q311,127,327,146Q343,165,387,172.5Q431,180,444,215Q457,250,427,278.5Z;
+                  
+                  M407,279Q399,308,343,296Q287,284,291,312.5Q295,341,279,368.5Q263,396,232.5,406.5Q202,417,188,384Q174,351,172.5,325Q171,299,104.5,294.5Q38,290,62,254.5Q86,219,115,201.5Q144,184,144,147Q144,110,180,120Q216,130,236.5,153.5Q257,177,284,152Q311,127,316,156Q321,185,336,198Q351,211,383,230.5Q415,250,407,279Z;" </animate>
+                </path>
+              </g>
+            </svg>
+          </div>
+
+          <div class="animacao-roxo">
+
+            <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+              <g transform="translate(145.21428680419922, -3.3034286499023438)">
+                <defs>
+                  <linearGradient id="gradient-rx" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color: rgb(136, 62, 155);"></stop>
+                    <stop offset="100%" style="stop-color: rgb(81, 5, 103);"></stop>
+                  </linearGradient>
+                </defs>
+                <path fill="url(#gradient-rx)">
+
+                  <animate attributeName="d" dur="3000ms" repeatCount="indefinite" values="M406.5,299.5Q368,349,324,385.5Q280,422,222.5,410Q165,398,136,350Q107,302,106,249.5Q105,197,138,154.5Q171,112,229.5,74Q288,36,319,101Q350,166,397.5,208Q445,250,406.5,299.5Z;
+                  
+                  M418.5,312Q398,374,342,415Q286,456,241,399.5Q196,343,169,316Q142,289,138,248.5Q134,208,146.5,150.5Q159,93,219.5,86.5Q280,80,312.5,125Q345,170,392,210Q439,250,418.5,312Z;
+                  
+                  M413,308.5Q390,367,328.5,358Q267,349,224,359.5Q181,370,134.5,339.5Q88,309,78.5,246.5Q69,184,120,149Q171,114,222,117Q273,120,347.5,113Q422,106,429,178Q436,250,413,308.5Z;
+                  
+                  M406.5,299.5Q368,349,324,385.5Q280,422,222.5,410Q165,398,136,350Q107,302,106,249.5Q105,197,138,154.5Q171,112,229.5,74Q288,36,319,101Q350,166,397.5,208Q445,250,406.5,299.5Z;">
+                  </animate>
+                </path>
+              </g>
+            </svg>
+
+          </div>
+
+
+          <div class="animacao-vermelho">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+              <g transform="translate(145.21428680419922, -3.3034286499023438)">
+                <path fill="#A60321">
+
+                  <animate attributeName="d" dur="4000ms" repeatCount="indefinite" values="M386.5,282Q405,314,412.5,367Q420,420,380,443.5Q340,467,295,409Q250,351,235,337Q220,323,154,367.5Q88,412,87.5,365Q87,318,95.5,284Q104,250,141.5,235.5Q179,221,158,179Q137,137,170,136.5Q203,136,226.5,101Q250,66,290.5,60.5Q331,55,350.5,92.5Q370,130,402,152Q434,174,401,212Q368,250,386.5,282Z;
+                  
+                  M382,272Q355,294,348.5,318Q342,342,324.5,365Q307,388,278.5,411.5Q250,435,207.5,445Q165,455,143,417Q121,379,91,353.5Q61,328,67,289Q73,250,61,208.5Q49,167,67.5,126.5Q86,86,151,127Q216,168,233,109.5Q250,51,295,41.5Q340,32,348,88Q356,144,376.5,166.5Q397,189,403,219.5Q409,250,382,272Z;
+                  
+                  M414,276.5Q379,303,347.5,309.5Q316,316,313,355Q310,394,280,377Q250,360,220.5,377Q191,394,175,367.5Q159,341,100,339Q41,337,32,293.5Q23,250,56,216.5Q89,183,131,178Q173,173,181.5,139Q190,105,220,100Q250,95,286.5,84Q323,73,332.5,115.5Q342,158,335.5,187.5Q329,217,389,233.5Q449,250,414,276.5Z;
+                  
+                  M386.5,282Q405,314,412.5,367Q420,420,380,443.5Q340,467,295,409Q250,351,235,337Q220,323,154,367.5Q88,412,87.5,365Q87,318,95.5,284Q104,250,141.5,235.5Q179,221,158,179Q137,137,170,136.5Q203,136,226.5,101Q250,66,290.5,60.5Q331,55,350.5,92.5Q370,130,402,152Q434,174,401,212Q368,250,386.5,282Z;">
+                  </animate>
+                </path>
+              </g>
+            </svg>
+          </div>
+
+          <div></div>
+
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -81,7 +174,7 @@
         </p>
         <div class="decor-sobre">
           <div>
-            <img class="elipise-sobre" src="./img/Ellipse-2.svg" alt="">
+            <img src="./img/Ellipse-2.svg" alt="" class="elipise-sobre">
           </div>
 
         </div>
@@ -90,7 +183,7 @@
       <div class="container-foto">
 
         <!-- Minha foto -->
-        <img class="foto-thales" src="./img/Thales.jpeg" alt="">
+        <img class="foto-thales" src="./img/Thales-profile.jpg" alt="">
       </div>
     </div>
   </div>
@@ -138,9 +231,15 @@
         </div>
         <div class="coluna-sobre-formacao">
           <p class="font-2-s cor-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+
           <div class="imagem-abstract">
             <img src="./img/Imagem-abstract.png" alt="">
           </div>
+
+          <div>
+            <img class="esfera rellax" data-rellax-speed="2" src="./img/Vector.png" alt="">
+          </div>
+
         </div>
       </div>
     </div>
@@ -335,6 +434,11 @@
         </div>
         < </footer>
 
+          <script src="./JS/script.js"></script>
+
+          <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+
+          <script>var rellax = new Rellax(".rellax");</script>
 </body>
 
 </html>

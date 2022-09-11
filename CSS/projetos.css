@@ -1,6 +1,6 @@
-.projetos {
+/* .projetos {
   background-color: #06051b;
-}
+} */
 
 .conatiner-projetos {
   position: relative;
@@ -16,7 +16,24 @@
   background-image: url("../img/shine-2.png");
   position: absolute;
   z-index: 0;
-  opacity: 0.6;
+
+  animation: pulsar 4s infinite;
+}
+
+@keyframes pulsar {
+  0% {
+    opacity: 0.6;
+  }
+  25% {
+    opacity: 0.4;
+  }
+  75% {
+    opacity: 0.8;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
 }
 
 .primeiro-conatiner-projetos {

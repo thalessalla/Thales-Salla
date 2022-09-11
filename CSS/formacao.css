@@ -1,6 +1,6 @@
-.formacao {
-  background-color: #06051b;
-}
+/* .formacao {
+   background-color: #06051b; 
+} */
 
 .h2-formacao {
   max-width: 1200px;
@@ -117,7 +117,7 @@
   z-index: 2;
 }
 
-.coluna-sobre-formacao div::before {
+/* .coluna-sobre-formacao div::before {
   content: "";
   left: -50px;
   top: 230px;
@@ -126,6 +126,13 @@
   height: 159px;
   background-image: url("../img/Vector.png");
   position: absolute;
+} */
+
+.esfera {
+  position: absolute;
+  z-index: 90;
+  left: -50px;
+  top: 130px;
 }
 
 .imagem-abstract::after {
@@ -139,4 +146,5 @@
   position: absolute;
   background-repeat: no-repeat;
   z-index: -1;
+  animation: pulsar 4s infinite;
 }

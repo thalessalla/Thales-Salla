@@ -1,13 +1,12 @@
-.form {
-  background-color: #06051b;
-}
+/* .form {
+  background-color: #06051b; 
+} */
 
 .container-form {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* margin: 160px; */
 }
 
 .segunda-coluna-form {
@@ -19,13 +18,13 @@
 .segunda-coluna-form::before {
   content: "";
   position: absolute;
-  background-image: url("../img/liquid-form.png");
+  background-image: url("../img/fluid-circle.gif");
   width: 590px;
   height: 550px;
   background-repeat: no-repeat;
   left: -550px;
-  top: -100px;
-  z-index: 0;
+  top: -5px;
+  z-index: -1;
 }
 
 .primeira-coluna-form {
@@ -93,6 +92,7 @@ textarea {
 .input-form:valid ~ .label-form {
   top: -20px;
   font-size: 16px;
+  color: #d2d1d1;
 }
 
 input:-webkit-autofill,
