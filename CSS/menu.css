@@ -12,6 +12,8 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .header-menu ul {
@@ -22,7 +24,7 @@
 }
 
 .header-menu li {
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .hover-underline-animation {
@@ -37,7 +39,6 @@
   width: 100%;
   transform: scaleX(0);
   height: 1px;
-
   bottom: -5px;
   left: 0;
   background-color: #ffffff;
@@ -94,23 +95,25 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   padding-right: 10px;
-  /* padding: -144px; */
+  padding: -144px;
 }
 
 .menu-scroll a {
   text-decoration: none;
   color: #ececec;
-  padding: 5px 10px;
+  /* padding: 5px 10px; */
   align-items: center;
+}
+
+#logo-nome {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .container-menu-scroll-js {
   transition: all 1s;
 }
-
-/* .menu-scroll-js {
-  transition: all 1s;
-} */
 
 .menu-scroll-js {
   transition: all 0.5s;
@@ -118,4 +121,6 @@
 
 .menu-scroll {
   transition: transform 0.2s;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

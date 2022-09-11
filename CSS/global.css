@@ -92,3 +92,27 @@ a {
     transform: rotateY(0deg);
   }
 }
+
+/* Animações ao Scroll */
+
+.js-fade-up {
+  opacity: 0;
+  transform: translate3d(0, 90px, 0);
+  transition: 0.8s;
+}
+
+.ativo-scroll {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.js-fade-right {
+  opacity: 0;
+  transform: translate3d(90px, 0, 0);
+  transition: 0.5s;
+}
+
+.ativo-scroll-right {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}

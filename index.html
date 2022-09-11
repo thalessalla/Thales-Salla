@@ -14,20 +14,20 @@
 
   <div class="container-menu-scroll">
     <div class="menu-scroll">
-      <a id="logo-nome" href="#topo"> <img src="./img/" </a>
-        <nav>
+      <a id="logo-nome" href="#topo"> <img src="./img/Thales-Salla.svg" </a>
+        <nav class="js-link">
           <ul>
-            <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Sobre mim</a></li>
-            <li><a class="hover-underline-animation cor-4 font-1-s" href="./animacao.html">Formação</a></li>
-            <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Projetos</a></li>
-            <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Experiência</a></li>
+            <li><a class="hover-underline-animation cor-4 font-1-s" href="#sobre">Sobre mim</a></li>
+            <li><a class="hover-underline-animation cor-4 font-1-s" href="#formacao">Formação</a></li>
+            <li><a class="hover-underline-animation cor-4 font-1-s" href="#projetos">Projetos</a></li>
+            <li><a class="hover-underline-animation cor-4 font-1-s" href="#experiencia">Experiência</a></li>
           </ul>
         </nav>
     </div>
   </div>
 
 
-  <div class="bkg-home">
+  <div id="topo" class="bkg-home">
 
     <div class="conatiner-moldura">
       <div class="moldura-home">
@@ -35,13 +35,13 @@
         <header class="header">
 
           <div class="header-menu">
-            <a id="logo-nome" href="#topo"> <img src="" </a>
-              <nav>
+            <a id="logo-nome" href="#topo"> <img src="./img/Thales-Salla.svg" </a>
+              <nav class="js-link">
                 <ul>
-                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Sobre mim</a></li>
-                  <li><a class="hover-underline-animation cor-4 font-1-s" href="./animacao.html">Formação</a></li>
-                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Projetos</a></li>
-                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#">Experiência</a></li>
+                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#sobre">Sobre mim</a></li>
+                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#formacao">Formação</a></li>
+                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#projetos">Projetos</a></li>
+                  <li><a class="hover-underline-animation cor-4 font-1-s" href="#experiencia">Experiência</a></li>
                 </ul>
               </nav>
           </div>
@@ -58,13 +58,13 @@
         <div class="redes-home">
           <ul>
             <li>
-              <a href="#"><img src="./img/Linkedin.svg" alt=""></a>
+              <a href="https://www.linkedin.com/in/thales-salla-09b2a6181/"><img src="./img/Linkedin.svg" alt=""></a>
             </li>
             <li>
-              <a href="#"><img src="./img/Github-icon.png" alt=""></a>
+              <a href="https://github.com/thalessalla"><img src="./img/Github-icon.png" alt=""></a>
             </li>
             <li>
-              <a href="#"><img src="./img/email.svg" alt=""></a>
+              <a href="mailto:thales.salla@gmail.com"><img src="./img/email.svg" alt=""></a>
             </li>
           </ul>
         </div>
@@ -160,16 +160,17 @@
 
   <!-- Sobre mim -->
 
-  <div class="sobre-mim">
+  <section id="sobre" class="sobre-mim js-fade-up">
     <div>
-      <h2 class="h2-sobre">Sobre mim</h2>
+      <h2 class=" h2-sobre">Sobre mim</h2>
       <div class="divisor">
         <img src="./img/divisor.svg" alt="">
       </div>
     </div>
-    <div class="container-sobre">
+    <div class="container-sobre 
+  ">
       <div>
-        <p class="font-2-s cor-4">
+        <p class=" font-2-s cor-4">
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
         </p>
         <div class="decor-sobre">
@@ -183,14 +184,14 @@
       <div class="container-foto">
 
         <!-- Minha foto -->
-        <img class="foto-thales" src="./img/Thales-profile.jpg" alt="">
+        <img class="foto-thales js-fade-right" src="./img/Thales-profile.jpg" alt="">
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Formação -->
 
-  <div class="formacao">
+  <section id="formacao" class="formacao js-fade-up">
     <div>
       <h2 class="h2-formacao">Formação</h2>
       <div class="divisor">
@@ -243,11 +244,11 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Projetos -->
 
-  <div class="projetos">
+  <section id="projetos" class="projetos js-fade-up">
     <div>
       <h2 class="h2-projetos">Projetos</h2>
       <div class="divisor">
@@ -300,11 +301,11 @@
 
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- Experiência -->
 
-  <div class="experiencia">
+  <section id="experiencia" class="experiencia js-fade-up">
     <div>
       <h2 class="h2-experiencia">Experiência</h2>
       <div class="divisor">
@@ -326,119 +327,121 @@
         </div>
 
       </div>
+    </div>
+  </section>
 
-      <!-- Habilidades -->
+  <!-- Habilidades -->
 
-      <div class="habilidades">
-        <div class="conatiner-habilidades">
-          <h2 class="h2-habilidades">Habilidades</h2>
-          <ul>
-            <li>
-              <img src="./img/Wordpress.png" alt="">
-              <p class="font-2-s-b cor-3">Wordpress</p>
-            </li>
+  <section id="habilidade" class="habilidades js-fade-up">
+    <div class="conatiner-habilidades">
+      <h2 class="h2-habilidades">Habilidades</h2>
+      <ul>
+        <li>
+          <img src="./img/Wordpress.png" alt="">
+          <p class="font-2-s-b cor-3">Wordpress</p>
+        </li>
 
-            <li>
-              <img src="./img/html.png" alt="">
-              <p class="font-2-s-b cor-3">HTML</p>
-            </li>
+        <li>
+          <img src="./img/html.png" alt="">
+          <p class="font-2-s-b cor-3">HTML</p>
+        </li>
 
-            <li>
-              <img src="./img/css.png" alt="">
-              <p class="font-2-s-b cor-3">CSS</p>
-            </li>
+        <li>
+          <img src="./img/css.png" alt="">
+          <p class="font-2-s-b cor-3">CSS</p>
+        </li>
 
-            <li>
-              <img src="./img/Js.png" alt="">
-              <p class="font-2-s-b cor-3">JavaScript</p>
-            </li>
+        <li>
+          <img src="./img/Js.png" alt="">
+          <p class="font-2-s-b cor-3">JavaScript</p>
+        </li>
 
-            <li>
-              <img src="./img/git.png" alt="">
-              <p class="font-2-s-b cor-3">Git</p>
-            </li>
+        <li>
+          <img src="./img/git.png" alt="">
+          <p class="font-2-s-b cor-3">Git</p>
+        </li>
 
-            <li>
-              <img src="./img/Github.png" alt="">
-              <p class="font-2-s-b cor-3">Github</p>
-            </li>
+        <li>
+          <img src="./img/Github.png" alt="">
+          <p class="font-2-s-b cor-3">Github</p>
+        </li>
 
-            <li>
-              <img src="./img/Figma.png" alt="">
-              <p class="font-2-s-b cor-3">Figma</p>
-            </li>
+        <li>
+          <img src="./img/Figma.png" alt="">
+          <p class="font-2-s-b cor-3">Figma</p>
+        </li>
 
-            <li>
-              <img src="./img/React.png" alt="">
-              <p class="font-2-s-b cor-3">Estudando</p>
-            </li>
+        <li>
+          <img src="./img/React.png" alt="">
+          <p class="font-2-s-b cor-3">Estudando</p>
+        </li>
 
-          </ul>
-        </div>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Formulario -->
+
+  <section id="formulario" class="form">
+    <div class="container-form">
+
+      <div class="primeira-coluna-form">
 
       </div>
 
-      <!-- Formulario -->
+      <div class="segunda-coluna-form">
+        <div>
+          <h3 class="font-1-m cor-3">Fale comigo!</h3>
+          <p>Resta alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entraremos em contato.</p>
 
-      <div class="form">
-        <div class="container-form">
+          <form action="">
 
-          <div class="primeira-coluna-form">
+            <div class="input-box">
+              <input type="text" class="input-form" id="fname" name="fname" required><br>
+              <label for="fname" class="label-form">Nome:</label><br>
+            </div>
 
-          </div>
+            <div class="input-box">
+              <input type="email" class="input-form" id="email" name="email" required><br>
+              <label for="email" class="label-form">Email:</label><br>
+            </div>
 
-          <div class="segunda-coluna-form">
-            <div>
-              <h3 class="font-1-m cor-3">Fale comigo!</h3>
-              <p>Resta alguma dúvida? Preencha os campos abaixo com os seguintes dados que em breve entraremos em contato.</p>
+            <div class="input-box">
+              <input type="text" class="input-form" id="subject" name="subject" required><br>
+              <label for="subject" class="label-form">Assunto:</label><br>
+            </div>
 
-              <form action="">
-
-                <div class="input-box">
-                  <input type="text" class="input-form" id="fname" name="fname" required><br>
-                  <label for="fname" class="label-form">Nome:</label><br>
-                </div>
-
-                <div class="input-box">
-                  <input type="email" class="input-form" id="email" name="email" required><br>
-                  <label for="email" class="label-form">Email:</label><br>
-                </div>
-
-                <div class="input-box">
-                  <input type="text" class="input-form" id="subject" name="subject" required><br>
-                  <label for="subject" class="label-form">Assunto:</label><br>
-                </div>
-
-                <div class="input-box">
-                  <label for="story" class="label-form">Mensagem:</label> <br><textarea id="story" name="story" rows="5" cols="33">
+            <div class="input-box">
+              <label for="story" class="label-form">Mensagem:</label> <br><textarea id="story" name="story" rows="5" cols="33">
 
                 </textarea>
 
-                </div>
-
-
-              </form>
             </div>
-          </div>
+
+
+          </form>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- Footer -->
-      <footer>
+  <!-- Footer -->
+  <footer>
 
 
-        <div class="conatiner-footer">
+    <div class="conatiner-footer">
 
-          <p>Alguns direitos reservados.</p>
+      <p>Alguns direitos reservados.</p>
 
-        </div>
-        < </footer>
+    </div>
+    < </footer>
 
-          <script src="./JS/script.js"></script>
+      <script src="./JS/script.js"></script>
 
-          <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/dixonandmoe/rellax@master/rellax.min.js"></script>
 
-          <script>var rellax = new Rellax(".rellax");</script>
+      <script>var rellax = new Rellax(".rellax");</script>
 </body>
 
 </html>
