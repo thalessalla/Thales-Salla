@@ -91,3 +91,23 @@
     left: -450px;
   }
 }
+
+@media (max-width: 380px){
+  .container-animacao {
+    transform: scale(40%);
+    left: 50%;
+    top: 45vh;
+  }
+  .animacao-vermelho {
+    opacity: 0.3;
+  }
+  .animacao-roxo {
+    opacity: 0.3;
+  }
+  .animacao-azul {
+    opacity: 0.3;
+    width: 1000px;
+    left: -450px;
+  }
+}
+}

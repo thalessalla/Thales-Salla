@@ -200,6 +200,7 @@
   }
   .redes-home {
     padding-left: 50px;
+    width: 10%;
   }
   .bkg-home {
     overflow: hidden;
@@ -210,9 +211,29 @@
   .bkg-home h1 {
     padding-left: 0px;
     padding-top: 10vh;
-    padding-bottom: 45vh;
+    padding-bottom: 30vh;
   }
   .redes-home {
     padding-left: 0px;
+  }
+}
+
+@media (max-width: 380px) {
+  .bkg-home h1 {
+    font-size: 40px;
+    padding-left: 0px;
+    padding-top: 4vh;
+    padding-bottom: 10vh;
+  }
+  .redes-home {
+    padding-left: 0px;
+  }
+  .redes-home {
+    padding-left: -20px;
+    width: 8%;
+  }
+  .scroll-down-home {
+    transform: scale(0.8);
+    width: 80vw;
   }
 }
