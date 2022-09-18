@@ -23,10 +23,6 @@
   justify-content: flex-end;
 }
 
-.header-menu li {
-  /* padding: 20px; */
-}
-
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -67,6 +63,7 @@
   /* align-items: center; */
   padding: 0px 200px;
   transform: translateY(-60px);
+  opacity: 0;
 }
 
 .container-menu-scroll-js {
@@ -87,6 +84,7 @@
   transform: translateY(-4px);
   top: 0;
   padding: 4px 200px;
+  opacity: 1;
 }
 
 .menu-scroll ul {
@@ -123,4 +121,21 @@
   transition: transform 0.2s;
   padding-top: 20px;
   padding-bottom: 20px;
+  transition: all 0.5s;
+}
+
+@media (max-width: 970px) {
+  .header {
+    padding-left: 100px;
+    transform: translateY(-150px);
+  }
+  .menu-scroll {
+    transform: translateY(-150px);
+  }
+}
+
+@media (max-width: 760px) {
+  .header {
+    display: none;
+  }
 }

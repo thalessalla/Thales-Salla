@@ -84,3 +84,64 @@
 .conatiner-projetos button:hover {
   background-position: right;
 }
+
+/* Responsividade  */
+
+@media (max-width: 1400px) {
+  .projetos {
+    margin: 0 20px 0 20px;
+  }
+  .divisor {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 1000px) {
+  .conatiner-projetos {
+    grid-template-columns: 1fr;
+  }
+  .conatiner-projetos > div {
+    display: flex;
+    justify-content: center;
+  }
+  .segunda-coluna-projetos {
+    justify-content: center;
+  }
+  .h2-projetos {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .primeiro-conatiner-projetos h3 {
+    font-size: 18px;
+    font-weight: 23.4px;
+  }
+  .primeiro-conatiner-projetos :nth-child(3) {
+    font-size: 16px;
+    font-weight: 20.8px;
+  }
+  .primeiro-conatiner-projetos :nth-child(4) {
+    font-size: 16px;
+    font-weight: 20.8px;
+  }
+  .segunda-projetos :nth-child(3) {
+    font-size: 16px;
+    font-weight: 20.8px;
+  }
+  .segunda-projetos :nth-child(4) {
+    font-size: 16px;
+    font-weight: 20.8px;
+  }
+  .segunda-projetos h3 {
+    font-size: 18px;
+    font-weight: 23.4px;
+  }
+  .segunda-projetos div {
+    margin: 14px 0;
+  }
+  .primeiro-conatiner-projetos div {
+    margin: 14px 0;
+  }
+}

@@ -1,31 +1,34 @@
 .animacao-azul {
   filter: blur(70px);
   transform: translateY(-20%);
-  opacity: 0.6;
+  opacity: 0.4;
   margin-bottom: 0;
   position: absolute;
   width: 1200px;
   left: -500px;
+  overflow: hidden;
 }
 
 .animacao-roxo {
   filter: blur(70px);
   transform: translateY(20%);
-  opacity: 0.7;
+  opacity: 0.5;
   margin-bottom: 0;
   left: -500px;
   position: absolute;
   width: 800px;
   z-index: 1;
+  overflow: hidden;
 }
 
 .animacao-vermelho {
   filter: blur(60px);
   width: 1400px;
   transform: translateY(-40%);
-  opacity: 0.4;
+  opacity: 0.3;
   left: -900px;
   position: absolute;
+  overflow: hidden;
 }
 
 .container-animacao {
@@ -39,6 +42,8 @@
   animation-duration: 1s;
   animation-delay: 0.8s;
   animation-fill-mode: both;
+  transform: scale(90%);
+  overflow: visible;
 }
 
 /* .container-animacao::before {
@@ -53,3 +58,36 @@
   pointer-events: none;
   background: url("../img/noise.gif");
 } */
+
+/* Responsividade */
+
+@media (max-width: 1400px) {
+  .container-animacao {
+    transform: scale(70%);
+  }
+}
+
+@media (max-width: 950px) {
+  .container-animacao {
+    transform: scale(50%);
+  }
+}
+
+@media (max-width: 700px) {
+  .container-animacao {
+    transform: scale(70%);
+    left: 50%;
+    top: 45vh;
+  }
+  .animacao-vermelho {
+    opacity: 0.3;
+  }
+  .animacao-roxo {
+    opacity: 0.3;
+  }
+  .animacao-azul {
+    opacity: 0.3;
+    width: 1000px;
+    left: -450px;
+  }
+}

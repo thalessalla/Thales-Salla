@@ -13,12 +13,12 @@
 }
 
 .bkg-home h1 {
-  padding-left: 217px;
-  /*padding-top: 70px; */
+  display: flex;
+  justify-content: center;
   padding-top: 5vh;
   padding-bottom: 5vh;
   z-index: 100;
-  white-space: nowrap;
+  /* white-space: nowrap; */
   animation-name: opacity, zoom, blur;
   animation-duration: 1s;
   animation-delay: 1.2s;
@@ -52,7 +52,7 @@
 }
 
 .moldura-home {
-  width: 1400px;
+  width: 80vw;
   box-sizing: border-box;
   margin: 0 auto;
   /* border: 1px solid #ffffff; */
@@ -81,6 +81,7 @@
   background-position: center;
   animation: zoom 1.5s ease-out;
   transition-timing-function: ease-in-out;
+  overflow: hidden;
 }
 
 .redes-home {
@@ -152,5 +153,66 @@
   }
   100% {
     border: 1px solid rgba(255, 255, 255, 1);
+  }
+}
+
+/* responsividade  */
+
+@media (max-width: 1400px) {
+  .bkg-home h1 {
+    font-size: 74px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+
+  .moldura-home {
+    width: 90vw;
+  }
+}
+
+@media (max-width: 1120px) {
+  .bkg-home h1 {
+    font-size: 54px;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+}
+
+@media (max-width: 970px) {
+  .moldura-home {
+    animation: none;
+  }
+
+  .bkg-home h1 {
+    padding-left: 100px;
+    display: block;
+  }
+
+  .redes-home {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 760px) {
+  .bkg-home h1 {
+    padding-left: 50px;
+    max-width: 13ch;
+  }
+  .redes-home {
+    padding-left: 50px;
+  }
+  .bkg-home {
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 590px) {
+  .bkg-home h1 {
+    padding-left: 0px;
+    padding-top: 10vh;
+    padding-bottom: 45vh;
+  }
+  .redes-home {
+    padding-left: 0px;
   }
 }

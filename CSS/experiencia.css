@@ -42,3 +42,32 @@
   opacity: 0.6;
 }
 */
+
+/* Responsivo */
+
+@media (max-width: 1400px) {
+  .experiencia {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .conatiner-experiencia img {
+    display: none;
+  }
+  .conatiner-experiencia {
+    grid-template-columns: 1fr;
+  }
+  .h2-experiencia {
+    justify-content: start;
+    display: inline-block;
+  }
+  .segunda-coluna-experiencia {
+    text-align: left;
+    padding-bottom: 40px;
+  }
+  .shine-experiencia p {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}

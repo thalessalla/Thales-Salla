@@ -3,13 +3,10 @@
 } */
 
 .h2-formacao {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.h2-formacao {
   display: flex;
   justify-content: flex-end;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .conatiner-formacao {
@@ -17,10 +14,12 @@
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
   margin: 0 auto;
+  grid-template-areas: "um dois";
 }
 
 .coluna-cursos {
   position: relative;
+  grid-area: um;
 }
 
 .facul {
@@ -63,7 +62,7 @@
   top: 90px;
   display: inline-block;
   width: 36px;
-  height: 36px;
+  height: 34px;
   background-image: url("../img/certificado.png");
   position: absolute;
 }
@@ -88,7 +87,7 @@
 }
 
 .coluna-cursos span {
-  color: #03318c;
+  color: #0583f2;
 }
 
 .certificados,
@@ -99,10 +98,16 @@
 
 .coluna-sobre-formacao {
   padding-top: 20px;
+  grid-area: dois;
+  display: grid;
+  grid-template-areas:
+    "texto"
+    "foto";
 }
 
 .coluna-sobre-formacao p {
   text-align: right;
+  grid-area: texto;
 }
 
 .coluna-sobre-formacao div {
@@ -115,6 +120,7 @@
   display: flex;
   justify-content: flex-end;
   z-index: 2;
+  grid-area: foto;
 }
 
 /* .coluna-sobre-formacao div::before {
@@ -137,8 +143,8 @@
 
 .imagem-abstract::after {
   content: "";
-  left: 50px;
-  top: 0px;
+  left: 700px;
+  top: 500px;
   display: inline-block;
   width: 700px;
   height: 1000px;
@@ -147,4 +153,125 @@
   background-repeat: no-repeat;
   z-index: -1;
   animation: pulsar 4s infinite;
+  overflow: hidden;
+}
+
+.imagem-abstract img {
+  object-fit: cover;
+}
+
+/* Responsivo  */
+
+@media (max-width: 1400px) {
+  .formacao {
+    margin: 0 20px 0 20px;
+  }
+  .imagem-abstract::after {
+    transform: scale(60%);
+    left: 50%;
+    top: 450px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .imagem-abstract::after {
+    transform: scale(70%);
+    left: 20%;
+    top: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .h2-formacao {
+    display: inline-block;
+    justify-content: flex-start;
+  }
+  .imagem-abstract::after {
+    transform: scale(40%);
+    left: -350px;
+    top: -200px;
+  }
+  .formacao {
+    overflow: visible;
+  }
+  .esfera {
+    left: -2%;
+    top: 40%;
+    width: 13%;
+  }
+
+  .coluna-sobre-formacao p {
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 20px;
+    text-align: left;
+  }
+  .coluna-cursos h3 {
+    font-size: 18px;
+    line-height: 23.4px;
+  }
+  .coluna-cursos p {
+    font-size: 16px;
+    line-height: 20.8px;
+    margin: 10px 0px;
+  }
+  .coluna-sobre-formacao {
+    padding-top: 0;
+    display: block;
+    /* grid-template-areas: "foto texto"; */
+  }
+  .certificados,
+  .idiomas,
+  .cursos {
+    padding-top: 24px;
+  }
+  .facul::before {
+    left: 22px;
+    top: 20px;
+  }
+  .cursos::before {
+    left: -38px;
+    top: 20px;
+  }
+  .certificados::before {
+    left: -38px;
+    top: 20px;
+  }
+  .idiomas::before {
+    left: -38px;
+    top: 20px;
+  }
+  .coluna-sobre-formacao figure {
+    float: left;
+    padding-top: 20px;
+    margin: 0 12px 0 0;
+  }
+  .conatiner-formacao {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "dois"
+      "um";
+  }
+  .imagem-abstract img {
+    max-height: 200px;
+    max-width: 200px;
+  }
+  .coluna-cursos li {
+    background: rgba(255, 255, 255, 0.071);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.267);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 24px;
+    padding: 0 16px 16px 60px;
+    /* padding-left: 60px;
+    padding-bottom: 16px; */
+  }
+}
+
+@media (max-width: 600px) {
+  /* .formacao {
+    margin: 0 28px 0 28px;
+  } */
 }
