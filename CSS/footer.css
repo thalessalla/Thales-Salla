@@ -1,5 +1,6 @@
 footer {
   background: #03318c;
+  margin-top: -100px;
 }
 
 .conatiner-footer {
@@ -9,7 +10,6 @@ footer {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  margin-top: -100px;
 }
 
 .conatiner-footer p {
@@ -24,5 +24,11 @@ footer {
 @media (max-width: 1400px) {
   .conatiner-footer {
     margin: -100px 20px 0 0;
+  }
+  footer {
+    margin-top: -50px;
+  }
+  .conatiner-footer p {
+    padding-bottom: 0;
   }
 }

@@ -1,14 +1,9 @@
-/* .formacao {
-   background-color: #06051b; 
-} */
-
 .h2-formacao {
   display: flex;
   justify-content: flex-end;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .conatiner-formacao {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -16,16 +11,13 @@
   margin: 0 auto;
   grid-template-areas: "um dois";
 }
-
 .coluna-cursos {
   position: relative;
   grid-area: um;
 }
-
 .facul {
   padding-top: 20px;
 }
-
 .facul::before {
   content: "";
   left: -38px;
@@ -36,11 +28,9 @@
   background-image: url("../img/school.png");
   position: absolute;
 }
-
 .cursos {
   position: relative;
 }
-
 .cursos::before {
   content: "";
   left: -38px;
@@ -51,11 +41,9 @@
   background-image: url("../img/curso.png");
   position: absolute;
 }
-
 .certificados {
   position: relative;
 }
-
 .certificados::before {
   content: "";
   left: -38px;
@@ -66,11 +54,9 @@
   background-image: url("../img/certificado.png");
   position: absolute;
 }
-
 .idiomas {
   position: relative;
 }
-
 .idiomas::before {
   content: "";
   left: -38px;
@@ -81,21 +67,17 @@
   background-image: url("../img/idiomas.png");
   position: absolute;
 }
-
 .coluna-cursos p {
   max-width: 40ch;
 }
-
 .coluna-cursos span {
   color: #0583f2;
 }
-
 .certificados,
 .idiomas,
 .cursos {
   padding-top: 80px;
 }
-
 .coluna-sobre-formacao {
   padding-top: 20px;
   grid-area: dois;
@@ -104,43 +86,27 @@
     "texto"
     "foto";
 }
-
 .coluna-sobre-formacao p {
   text-align: right;
   grid-area: texto;
 }
-
 .coluna-sobre-formacao div {
   width: 100%;
   padding-top: 40px;
   position: relative;
 }
-
 .imagem-abstract {
   display: flex;
   justify-content: flex-end;
   z-index: 2;
   grid-area: foto;
 }
-
-/* .coluna-sobre-formacao div::before {
-  content: "";
-  left: -50px;
-  top: 230px;
-  display: inline-block;
-  width: 159px;
-  height: 159px;
-  background-image: url("../img/Vector.png");
-  position: absolute;
-} */
-
 .esfera {
   position: absolute;
   z-index: 90;
   left: -50px;
   top: 130px;
 }
-
 .imagem-abstract::after {
   content: "";
   left: 700px;
@@ -148,14 +114,13 @@
   display: inline-block;
   width: 700px;
   height: 1000px;
-  background-image: url("../img/shine-1.png");
+  background-image: url("../img/shine-1.webp");
   position: absolute;
   background-repeat: no-repeat;
   z-index: -1;
   animation: pulsar 4s infinite;
   overflow: hidden;
 }
-
 .imagem-abstract img {
   object-fit: cover;
 }
@@ -172,7 +137,6 @@
     top: 450px;
   }
 }
-
 @media (max-width: 1000px) {
   .imagem-abstract::after {
     transform: scale(70%);
@@ -180,7 +144,6 @@
     top: 40%;
   }
 }
-
 @media (max-width: 700px) {
   .h2-formacao {
     display: inline-block;
@@ -195,11 +158,8 @@
     overflow: visible;
   }
   .esfera {
-    left: -2%;
-    top: 40%;
-    width: 13%;
+    display: none;
   }
-
   .coluna-sobre-formacao p {
     font-size: 16px;
     line-height: 24px;
@@ -218,7 +178,6 @@
   .coluna-sobre-formacao {
     padding-top: 0;
     display: block;
-    /* grid-template-areas: "foto texto"; */
   }
   .certificados,
   .idiomas,
@@ -265,13 +224,5 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     margin-top: 24px;
     padding: 0 16px 16px 60px;
-    /* padding-left: 60px;
-    padding-bottom: 16px; */
   }
-}
-
-@media (max-width: 600px) {
-  /* .formacao {
-    margin: 0 28px 0 28px;
-  } */
 }

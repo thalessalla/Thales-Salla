@@ -1,11 +1,6 @@
-/* .projetos {
-  background-color: #06051b;
-} */
-
 .conatiner-projetos {
   position: relative;
 }
-
 .conatiner-projetos::before {
   content: "";
   display: inline-block;
@@ -13,13 +8,11 @@
   height: 1100px;
   left: -700px;
   top: 0px;
-  background-image: url("../img/shine-2.png");
+  background-image: url("../img/shine-2.webp");
   position: absolute;
   z-index: 0;
-
   animation: pulsar 4s infinite;
 }
-
 @keyframes pulsar {
   0% {
     opacity: 0.6;
@@ -35,113 +28,35 @@
     opacity: 0.6;
   }
 }
-
-.primeiro-conatiner-projetos {
-  z-index: 1;
-}
-
 .h2-projetos {
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .conatiner-projetos img {
   padding-top: 40px;
+  max-width: 100%;
+  height: auto;
 }
 .conatiner-projetos {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
-
 .conatiner-projetos p {
   max-width: 38ch;
 }
-
 .segunda-coluna-projetos {
   display: flex;
   justify-content: flex-end;
-}
-
-.conatiner-projetos button {
-  padding: 12px 32px;
-  background: linear-gradient(94.41deg, #03318c, #056cf2, #03318c);
-  border: none;
-  cursor: pointer;
-  margin-top: 24px;
-
-  background-size: 300%;
-  background-position: left;
-  transition: background-position 0.8s ease-in-out;
-}
-
-/*
-.conatiner-projetos button {
-  transition: background-position 1s ease-in-out;
-} */
-
-.conatiner-projetos button:hover {
-  background-position: right;
+  z-index: 1;
 }
 
 /* Responsividade  */
 
 @media (max-width: 1400px) {
   .projetos {
-    margin: 0 20px 0 20px;
-  }
-  .divisor {
-    object-fit: cover;
-  }
-}
-
-@media (max-width: 1000px) {
-  .conatiner-projetos {
-    grid-template-columns: 1fr;
-  }
-  .conatiner-projetos > div {
-    display: flex;
-    justify-content: center;
-  }
-  .segunda-coluna-projetos {
-    justify-content: center;
-  }
-  .h2-projetos {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 700px) {
-  .primeiro-conatiner-projetos h3 {
-    font-size: 18px;
-    font-weight: 23.4px;
-  }
-  .primeiro-conatiner-projetos :nth-child(3) {
-    font-size: 16px;
-    font-weight: 20.8px;
-  }
-  .primeiro-conatiner-projetos :nth-child(4) {
-    font-size: 16px;
-    font-weight: 20.8px;
-  }
-  .segunda-projetos :nth-child(3) {
-    font-size: 16px;
-    font-weight: 20.8px;
-  }
-  .segunda-projetos :nth-child(4) {
-    font-size: 16px;
-    font-weight: 20.8px;
-  }
-  .segunda-projetos h3 {
-    font-size: 18px;
-    font-weight: 23.4px;
-  }
-  .segunda-projetos div {
-    margin: 14px 0;
-  }
-  .primeiro-conatiner-projetos div {
-    margin: 14px 0;
+    margin: 0 20px;
   }
 }

@@ -6,7 +6,7 @@
   position: absolute;
   width: 1200px;
   left: -500px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .animacao-roxo {
@@ -18,7 +18,7 @@
   position: absolute;
   width: 800px;
   z-index: 1;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .animacao-vermelho {
@@ -28,7 +28,7 @@
   opacity: 0.3;
   left: -900px;
   position: absolute;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container-animacao {
@@ -92,7 +92,7 @@
   }
 }
 
-@media (max-width: 380px){
+@media (max-width: 380px) {
   .container-animacao {
     transform: scale(40%);
     left: 50%;
@@ -109,5 +109,4 @@
     width: 1000px;
     left: -450px;
   }
-}
 }

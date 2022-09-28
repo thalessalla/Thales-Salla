@@ -46,13 +46,13 @@
 }
 
 @media (max-width: 1150px) {
-  li img {
+  /* .conatiner-habilidades li {
     width: 60px;
-  }
-  #icon-figma {
+  } */
+  /* #icon-figma {
     height: 60px;
     width: 40px;
-  }
+  } */
   .habilidades-tec p {
     font-size: 16px;
   }
@@ -73,17 +73,27 @@
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     padding: 8px;
+    filter: brightness(2);
+    transform: scale(1.2);
   }
   .conatiner-habilidades {
     background: none;
   }
-  .conatiner-habilidades img {
-    filter: brightness(2);
-    transform: scale(1.5);
-  }
+
   .habilidades ul {
-    gap: 10% 10%;
+    gap: 8%;
     padding: 0 20px;
+  }
+  .habilidades-tec p {
+    padding-top: 8px;
+    color: #d7d7d7;
+  }
+  .habilidades-tec li {
+    padding-bottom: 20px;
+  }
+  #icon-react {
+    background: rgba(89, 88, 88, 0.211);
+    filter: brightness(0.8);
   }
   .habilidades h2 {
     display: flex;
@@ -98,10 +108,9 @@
     margin-top: 44px;
   }
 }
-
+/* 
 @media (max-width: 500px) {
   .conatiner-habilidades img {
-    filter: brightness(2);
     transform: scale(1.2);
   }
-}
+} */

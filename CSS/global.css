@@ -11,6 +11,13 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  font-size: 100%;
+}
+footer {
+  overflow-x: hidden;
+}
+
 h1,
 h2,
 h3,
@@ -51,16 +58,29 @@ a {
   max-width: 1400px;
   margin: 0 auto;
 }
+.button {
+  padding: 12px 32px;
+  background: linear-gradient(94.41deg, #03318c, #056cf2, #03318c);
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+  background-size: 300%;
+  background-position: left;
+  transition: background-position 0.8s ease-in-out;
+}
+.button:hover {
+  background-position: right;
+}
 
 /* Animação carregar pagina */
 
 @keyframes zoom {
   0% {
-    /* opacity: 0; */
-    scale: 2;
+    opacity: 0;
+    scale: 1.2;
   }
   100% {
-    /* opacity: 1; */
+    opacity: 1;
     scale: 1;
   }
 }

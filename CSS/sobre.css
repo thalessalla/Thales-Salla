@@ -5,16 +5,21 @@
 
 .container-sobre {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   max-width: 1200px;
   margin: 0 auto;
-  grid-template-areas: "a b";
+  gap: 0 40px;
+  /* grid-template-areas: "a b"; */
 }
 
 .container-sobre p {
   padding-top: 40px;
 }
-
+.foto-thales {
+  max-width: 100%;
+  min-width: 50%;
+}
 .decor-sobre {
   position: relative;
   padding-top: 100px;
@@ -43,43 +48,18 @@
 }
 
 .foto-thales {
-  height: 600px;
-  width: 500px;
   object-fit: cover;
   align-content: flex-start;
 }
 
-/*
-.decor-sobre img::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/Ellipse-5.svg");
+.segunda-col-sobre {
+  order: -1;
 }
-
-.decor-sobre img::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/Mais.svg");
-  width: 30px;
-  height: 30px;
-}
-
-*/
 
 .container-foto {
   display: flex;
-  justify-content: flex-end;
-}
-
-.container-foto img {
+  /* justify-content: flex-end; */
   padding-top: 40px;
-}
-
-.segunda-col-sobre {
-  grid-area: b;
-}
-.first-col-sobre {
-  grid-area: a;
 }
 
 /* Responsivo */
@@ -88,9 +68,6 @@
   .sobre-mim {
     margin: 40px;
   }
-  .container-sobre p {
-    margin-right: 20px;
-  }
 }
 
 @media (max-width: 700px) {
@@ -98,9 +75,7 @@
   .divisor {
     display: none;
   }
-  .first-col-sobre p {
-    display: none;
-  }
+
   h2 {
     display: inline-block;
     padding-top: 80px;
@@ -108,36 +83,12 @@
     padding-bottom: 8px;
     border-bottom: 1px solid #fff;
   }
-  .container-sobre p {
-    font-size: 16px;
-    line-height: 24px;
-    padding-top: 20px;
-  }
-  .foto-thales {
-    max-height: 200px;
-    max-width: 200px;
-    object-position: top;
-  }
+
   .sobre-mim {
     margin: 20px;
   }
-  .container-foto img {
-    padding-top: 20px;
-  }
-
-  .container-sobre figure {
-    float: right;
-    margin: 0 0 10px 20px;
-  }
-
-  .container-sobre {
-    grid-template-columns: 1fr;
-    grid-template-areas: "a b";
-  }
 }
 
-@media (min-width: 700px) {
-  .segunda-col-sobre p {
-    display: none;
-  }
+.segunda-col-sobre p {
+  display: none;
 }

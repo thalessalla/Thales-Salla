@@ -1,24 +1,18 @@
 .bkg-home {
-  /* background-image: url("../img/bkg-home.jpg"); */
-  /* padding-top: 40px; */
   display: flex;
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
-  /* background-color: #06051b; */
-  /* width: 100vw; */
   position: relative;
   height: 100vh;
 }
-
 .bkg-home h1 {
   display: flex;
   justify-content: center;
-  padding-top: 5vh;
-  padding-bottom: 5vh;
+  padding-top: 8vh;
+  padding-bottom: 8vh;
   z-index: 100;
-  /* white-space: nowrap; */
   animation-name: opacity, zoom, blur;
   animation-duration: 1s;
   animation-delay: 1.2s;
@@ -26,64 +20,36 @@
   transition-timing-function: ease-out;
 }
 
-/* .bkg-home h1::after {
-  content: "";
-  margin-left: 8px;
-  display: inline-block;
-  width: 4px;
-  height: 94px;
-  background-color: #ffffff;
-  position: absolute;
-  animation: pulse 0.8s infinite steps(200);
-  animation-name: opacity;
-  animation-duration: 1s;
-  animation-delay: 2s;
-  animation-fill-mode: both;
-} */
-
 @keyframes pulse {
   from {
     opacity: 1;
   }
-
   to {
     opacity: 0;
   }
 }
-
 .moldura-home {
   width: 80vw;
   box-sizing: border-box;
   margin: 0 auto;
-  /* border: 1px solid #ffffff; */
   border-radius: 20px;
-  /* width: 100%; */
   animation-name: border;
   animation-duration: 2s;
   animation-delay: 2s;
   animation-fill-mode: both;
 }
-
-.moldura-home::before {
-  display: flex;
-  justify-content: center;
-  top: -30%;
-  left: 0;
-  width: 100%;
-  height: 200%;
-  content: "";
-  opacity: 0.3;
-  z-index: -1;
-  pointer-events: none;
-  background: url("../img/galaxy-comp.gif");
+.galaxy {
   position: absolute;
-  background-repeat: no-repeat;
-  background-position: center;
+  right: 0;
+  bottom: 0;
+  z-index: -10;
   animation: zoom 1.5s ease-out;
   transition-timing-function: ease-in-out;
   overflow: hidden;
+  width: auto;
+  height: 100vh;
+  opacity: 0.6;
 }
-
 .redes-home {
   display: flex;
   padding-left: 80px;
@@ -92,7 +58,10 @@
   animation-delay: 3s;
   animation-fill-mode: both;
 }
-
+.redes-home img {
+  max-width: 100%;
+  height: auto;
+}
 .scroll-down-home {
   display: flex;
   justify-content: center;
@@ -101,33 +70,27 @@
   animation-delay: 3.5s;
   animation-fill-mode: both;
 }
-
 .scroll-down-home div {
   display: flex;
   justify-content: center;
   transform: translateY(-60px);
 }
-
 .scroll-down-home p {
   opacity: 0.6;
 }
-
 .scroll-down-home img {
   position: absolute;
   animation: go-back 1s infinite;
   opacity: 0.2;
   margin-top: 20px;
 }
-
 .redes-home li {
   padding-top: 10px;
 }
-
 .redes-home a {
   transition: all 0.3s;
   opacity: 1;
 }
-
 .redes-home a:hover {
   opacity: 0.4;
   padding-left: 4px;
@@ -169,7 +132,6 @@
     width: 90vw;
   }
 }
-
 @media (max-width: 1120px) {
   .bkg-home h1 {
     font-size: 54px;
@@ -177,17 +139,14 @@
     padding-bottom: 5vh;
   }
 }
-
 @media (max-width: 970px) {
   .moldura-home {
     animation: none;
   }
-
   .bkg-home h1 {
     padding-left: 100px;
     display: block;
   }
-
   .redes-home {
     padding-left: 100px;
   }
@@ -204,6 +163,9 @@
   }
   .bkg-home {
     overflow: hidden;
+  }
+  .galaxy {
+    right: -80%;
   }
 }
 
@@ -223,7 +185,7 @@
     font-size: 40px;
     padding-left: 0px;
     padding-top: 4vh;
-    padding-bottom: 10vh;
+    padding-bottom: 25vh;
   }
   .redes-home {
     padding-left: 0px;
