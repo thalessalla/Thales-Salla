@@ -1,7 +1,7 @@
-.conatiner-projetos {
+.container-projetos {
   position: relative;
 }
-.conatiner-projetos::before {
+.container-projetos::before {
   content: "";
   display: inline-block;
   width: 900px;
@@ -32,19 +32,19 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.conatiner-projetos img {
+.container-projetos img {
   padding-top: 40px;
   max-width: 100%;
   height: auto;
 }
-.conatiner-projetos {
+.container-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 40px;
   max-width: 1200px;
   margin: 0 auto;
 }
-.conatiner-projetos p {
+.container-projetos p {
   max-width: 38ch;
 }
 .segunda-coluna-projetos {
@@ -58,5 +58,11 @@
 @media (max-width: 1400px) {
   .projetos {
     margin: 0 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container-projetos {
+    gap: 10px;
   }
 }

@@ -1,18 +1,18 @@
 body {
   margin: 0px;
-  font-family: "Roboto";
+  /* font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
   color: #2e2e2e;
-  font-size: 18px;
+  font-size: 18px; */
   background-color: #06051b;
   overflow-x: hidden;
 }
 
 html {
-  font-size: 100%;
+  font-size: 16px;
 }
 footer {
   overflow-x: hidden;
@@ -139,4 +139,16 @@ a {
 .ativo-scroll-right {
   opacity: 1;
   transform: translate3d(0, 0, 0);
+}
+
+@media (max-width: 760px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 520px) {
+  html {
+    font-size: 10px;
+  }
 }

@@ -7,11 +7,11 @@
   justify-content: flex-end;
 }
 
-.conatiner-experiencia img {
+.container-experiencia img {
   padding-top: 40px;
   padding-bottom: 160px;
 }
-.conatiner-experiencia {
+.container-experiencia {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
@@ -52,10 +52,10 @@
 }
 
 @media (max-width: 600px) {
-  .conatiner-experiencia img {
+  .container-experiencia img {
     display: none;
   }
-  .conatiner-experiencia {
+  .container-experiencia {
     grid-template-columns: 1fr;
   }
   .h2-experiencia {
@@ -64,10 +64,12 @@
   }
   .segunda-coluna-experiencia {
     text-align: left;
-    padding-bottom: 40px;
   }
-  .shine-experiencia p {
+  .segunda-coluna-experiencia {
+    padding-top: 20px;
+  }
+  /* .shine-experiencia p {
     font-size: 16px;
     line-height: 24px;
-  }
+  } */
 }

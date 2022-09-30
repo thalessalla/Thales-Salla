@@ -3,7 +3,7 @@ footer {
   margin-top: -100px;
 }
 
-.conatiner-footer {
+.container-footer {
   max-width: 1200px;
   margin: 0 auto;
   height: 200px;
@@ -12,7 +12,7 @@ footer {
   align-items: flex-end;
 }
 
-.conatiner-footer p {
+.container-footer p {
   color: #fff;
   font-size: 12px;
   padding-bottom: 34px;
@@ -22,13 +22,13 @@ footer {
 /* Responsivo */
 
 @media (max-width: 1400px) {
-  .conatiner-footer {
+  .container-footer {
     margin: -100px 20px 0 0;
   }
   footer {
     margin-top: -50px;
   }
-  .conatiner-footer p {
+  .container-footer p {
     padding-bottom: 0;
   }
 }

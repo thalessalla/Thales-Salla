@@ -4,7 +4,7 @@
   max-width: 1200px;
   margin: 0 auto;
 }
-.conatiner-formacao {
+.container-formacao {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1200px;
@@ -161,7 +161,7 @@
     display: none;
   }
   .coluna-sobre-formacao p {
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 24px;
     padding-top: 20px;
     text-align: left;
@@ -171,7 +171,7 @@
     line-height: 23.4px;
   }
   .coluna-cursos p {
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 20.8px;
     margin: 10px 0px;
   }
@@ -205,7 +205,7 @@
     padding-top: 20px;
     margin: 0 12px 0 0;
   }
-  .conatiner-formacao {
+  .container-formacao {
     grid-template-columns: 1fr;
     grid-template-areas:
       "dois"
