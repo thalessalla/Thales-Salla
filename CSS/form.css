@@ -18,9 +18,7 @@
   width: 80%;
   height: auto;
 }
-.segunda-coluna-form .circle {
-  display: none;
-}
+
 .primeira-coluna-form {
   border: #fff solid 4px;
   border-radius: 40px 0 0 40px;
@@ -144,5 +142,8 @@ input:-webkit-autofill:active {
   }
   .botao-enviar button {
     width: 100%;
+  }
+  .primeira-coluna-form .circle {
+    display: none;
   }
 }

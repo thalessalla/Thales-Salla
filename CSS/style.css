@@ -1,5 +1,5 @@
 @import "./global.css";
-@import "./home.css";
+/* @import "./home.css"; */
 @import "./menu.css";
 @import "./sobre.css";
 @import "./formacao.css";
@@ -11,7 +11,7 @@
 @import "./animacao.css";
 @import "../utilidades/cores.css";
 @import "../utilidades/tipografia.css";
-
+/* 
 @import "CSS/global.css";
 @import "CSS/home.css";
 @import "CSS/menu.css";
@@ -24,4 +24,4 @@
 @import "CSS/footer.css";
 @import "CSS/animacao.css";
 @import "utilidades/cores.css";
-@import "utilidades/tipografia.css";
+@import "utilidades/tipografia.css"; */

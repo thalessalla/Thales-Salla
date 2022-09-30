@@ -167,6 +167,9 @@
   .galaxy {
     right: -80%;
   }
+  .foto-thales {
+    max-height: 400px;
+  }
 }
 
 @media (max-width: 590px) {

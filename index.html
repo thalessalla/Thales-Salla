@@ -7,14 +7,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifólio Thales Salla</title>
   <link rel="preload" href="CSS/style.css" as="style">
+  <link rel="preload" href="CSS/home.css" as="style">
+  <link rel="preconnect" href="CSS/style.css" as="style">
+  <link rel="dns-prefetch" href="CSS/style.css" as="style">
   <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="CSS/home.css">
 </head>
 
 <body>
 
   <div class="container-menu-scroll">
     <div class="menu-scroll">
-      <a id="logo-nome" href="#topo"> <img src="./img/Thales-Salla.svg" width="170" height="22" </a>
+      <a id="logo-nome" href="#topo"> <img src="./img/Thales-Salla.svg" width="170" height="22" alt="logo Thales" </a>
         <nav class="js-link">
           <ul>
             <li><a class="hover-underline-animation cor-4 font-1-s" href="#sobre">Sobre mim</a></li>
@@ -35,7 +39,7 @@
         <header class="header">
 
           <div class="header-menu">
-            <a id="logo-nome" href="#topo"> <img src="./img/Thales-Salla.svg" width="170" height="22" </a>
+            <a id="logo-nome" href="#topo"> <img src="./img/Thales-Salla.svg" width="170" height="22" alt="logo Thales" </a>
               <nav class="js-link">
                 <ul>
                   <li><a class="hover-underline-animation cor-4 font-1-s" href="#sobre">Sobre mim</a></li>
@@ -168,7 +172,7 @@
     <div>
       <h2 class=" h2-sobre">Sobre mim</h2>
       <div class="divisor">
-        <img src="./img/divisor.svg" alt="">
+        <img src="./img/divisor.png" loading="lazy" alt="divisor" width="1400" height="8">
       </div>
     </div>
     <div class="container-sobre">
@@ -178,7 +182,7 @@
         </p>
         <div class="decor-sobre">
           <div>
-            <img src="./img/Ellipse-2.svg" alt="" class="elipise-sobre">
+            <img src="./img/Vector.png" loading="lazy" alt="Esfera decorativa" class="elipise-sobre" width="159" height="160">
           </div>
 
         </div>
@@ -187,9 +191,9 @@
       <!-- Minha foto -->
 
       <div class="segunda-col-sobre">
-        <figure class="container-foto">
-          <img class="foto-thales js-fade-up" src="./img/Thales-profile.webp" alt="Thales Salla" width="600" height="794">
-        </figure>
+        <picture class="container-foto">
+          <source media="(max-width: 800px)" srcset="./img/Thales-profile-mob.webp"> <img class="foto-thales js-fade-up" src="./img/Thales-profile.webp" alt="Thales Salla" loading="lazy" width="600" height="794">
+        </picture>
         <p class=" font-2-s cor-4">
           It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
         </p>
@@ -203,7 +207,7 @@
     <div>
       <h2 class="h2-formacao">Formação</h2>
       <div class="divisor">
-        <img src="./img/divisor.svg" alt="divisor">
+        <img src="./img/divisor.png" loading="lazy" alt="divisor" width="1400" height="8">
       </div>
       <div class="conatiner-formacao">
 
@@ -245,12 +249,12 @@
         <div class="coluna-sobre-formacao">
 
           <figure class="imagem-abstract">
-            <img src="./img/Imagem-abstract.webp" alt="imagem universo abstrato" width="572" height="571">
+            <img src="./img/Imagem-abstract.webp" loading="lazy" alt="imagem universo abstrato" width="572" height="571">
           </figure>
           <p class="font-2-s cor-4">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
 
           <div>
-            <img class="esfera rellax" data-rellax-speed="2" src="./img/Vector.png" width="159" height="160">
+            <img class="esfera rellax" data-rellax-speed="2" src="./img/Vector.png" loading="lazy" width="159" height="160" alt="esfera decorativa">
           </div>
 
         </div>
@@ -263,7 +267,7 @@
     <div>
       <h2 class="h2-projetos">Projetos</h2>
       <div class="divisor">
-        <img src="./img/divisor.svg" alt="divisor">
+        <img src="./img/divisor.png" loading="lazy" alt="divisor" width="1400" height="8">
       </div>
 
       <div class="conatiner-projetos">
@@ -322,7 +326,7 @@
     <div>
       <h2 class="h2-experiencia">Experiência</h2>
       <div class="divisor">
-        <img src="./img/divisor.svg" alt="divisor">
+        <img src="./img/divisor.png" loading="lazy" alt="divisor" width="1400" height="8">
       </div>
       <div class="conatiner-experiencia">
         <div>
@@ -405,7 +409,7 @@
 
       <div class="primeira-coluna-form">
         <video autoplay loop muted plays-inline class="circle">
-          <source src="./img/fluid-circle.mp4" type="video/mp4">
+          <source src="./img/fluid-circle.mp4" loading="lazy" type="video/mp4">
         </video>
       </div>
 
@@ -444,9 +448,6 @@
             </div>
           </form>
         </div>
-        <video autoplay loop muted plays-inline class="circle">
-          <source src="./img/fluid-circle.mp4" type="video/mp4">
-        </video>
       </div>
     </div>
   </section>
