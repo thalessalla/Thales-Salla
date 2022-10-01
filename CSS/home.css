@@ -183,6 +183,12 @@
   }
 }
 
+@media (max-width: 400px) {
+  .container-animacao {
+    display: none;
+  }
+}
+
 @media (max-width: 380px) {
   .bkg-home h1 {
     /* font-size: 40px; */

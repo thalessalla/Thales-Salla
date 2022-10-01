@@ -50,7 +50,12 @@ figure {
   margin: 0;
 }
 
+a:active {
+  color: #03318c;
+}
+
 a {
+  color: #0583f2;
   text-decoration: none;
 }
 
