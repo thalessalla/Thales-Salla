@@ -20,7 +20,7 @@
     </Div>
   </div>
 
-  <div class="container-animacao">
+  <!-- <div class="container-animacao">
     <div class="animacao-azul">
       <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
         <g transform="translate(167.8823127746582, -13.453407287597656)">
@@ -83,20 +83,167 @@
           </path>
         </g>
       </svg>
-    </div>
-    <style>
-      .container-obrigado {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+    </div> -->
+
+  <div class="border-b">
+    <div class="border-radius-animation-b"></div>
+  </div>
+
+  <div class="border-r">
+    <div class="border-radius-animation-r"></div>
+  </div>
+
+  <div class="border-v">
+    <div class="border-radius-animation-v"></div>
+  </div>
+
+  <style>
+    .border-b {
+      position: absolute;
+      overflow: hidden;
+      top: 40%;
+      left: 35%;
+      transform: translate(-50%, -50%);
+      padding: 0px;
+      filter: blur(50px);
+      opacity: .5;
+    }
+
+    .border-radius-animation-b {
+      width: 700px;
+      height: 700px;
+      background-image: radial-gradient(rgb(33, 150, 218), rgb(8, 64, 148));
+      border-radius: 30% 70% 70% 30% / 42% 49% 51% 58%;
+      animation: forma-azul 18s infinite;
+    }
+
+    .border-r {
+      position: absolute;
+      overflow: hidden;
+      top: 30%;
+      left: 35%;
+      transform: translate(0%, -0%);
+      padding: 0px;
+      filter: blur(50px);
+      opacity: .8;
+    }
+
+    .border-radius-animation-r {
+      width: 500px;
+      height: 500px;
+      background-image: radial-gradient(rgb(245, 63, 215), rgb(160, 24, 124));
+      border-radius: 30% 70% 70% 30% / 42% 49% 51% 58%;
+      animation: forma-roxa 10s infinite;
+    }
+
+    .border-v {
+      position: absolute;
+      overflow: hidden;
+      top: 20%;
+      left: 35%;
+      transform: translate(50%, -40%);
+      padding: 0px;
+      filter: blur(50px);
+      opacity: .5;
+    }
+
+    .border-radius-animation-v {
+      width: 450px;
+      height: 450px;
+      background-image: radial-gradient(rgb(94, 249, 97), rgb(47, 203, 70));
+      border-radius: 30% 70% 70% 30% / 42% 49% 51% 58%;
+      animation: forma-verde 19s infinite;
+    }
+
+    @keyframes forma-azul {
+      0% {
+        border-radius: 12% 88% 12% 88% / 42% 63% 37% 58%;
       }
 
-      .voltar {
-        display: flex;
-        justify-content: center;
+      25% {
+        border-radius: 42% 58% 90% 10% / 82% 63% 37% 18%;
       }
-    </style>
+
+      50% {
+        border-radius: 15% 85% 10% 90% / 82% 14% 86% 18%;
+      }
+
+      75% {
+        border-radius: 15% 85% 52% 48% / 18% 14% 86% 82%;
+      }
+
+      100% {
+        border-radius: 12% 88% 12% 88% / 42% 63% 37% 58%;
+      }
+    }
+
+    @keyframes forma-roxa {
+      0% {
+        border-radius: 32% 58% 32% 61% / 43% 41% 47% 43%;
+      }
+
+      25% {
+        border-radius: 75% 25% 70% 30% / 52% 19% 81% 48%;
+      }
+
+      50% {
+        border-radius: 46% 54% 11% 89% / 52% 89% 11% 48%;
+      }
+
+      75% {
+        border-radius: 15% 85% 50% 50% / 19% 37% 63% 81%;
+      }
+
+      100% {
+        border-radius: 32% 58% 32% 61% / 43% 41% 47% 43%;
+      }
+    }
+
+    @keyframes forma-verde {
+      0% {
+        border-radius: 75% 25% 70% 30% / 52% 19% 81% 48%;
+      }
+
+      25% {
+        border-radius: 46% 54% 11% 89% / 52% 89% 11% 48%;
+      }
+
+      50% {
+        border-radius: 88% 12% 50% 50% / 42% 37% 63% 58%;
+      }
+
+      75% {
+        border-radius: 30% 70% 70% 30% / 42% 49% 51% 58%;
+      }
+
+      100% {
+        border-radius: 75% 25% 70% 30% / 52% 19% 81% 48%;
+      }
+    }
+  </style>
+
+  32% 58% 32% 61% / 43% 41% 47% 43%
+  75% 25% 70% 30% / 52% 19% 81% 48%
+  46% 54% 11% 89% / 52% 89% 11% 48%
+  15% 85% 50% 50% / 19% 37% 63% 81%
+  32% 58% 32% 61% / 43% 41% 47% 43%
+
+
+
+
+  <style>
+    .container-obrigado {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .voltar {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
 </body>
 
 </html>
