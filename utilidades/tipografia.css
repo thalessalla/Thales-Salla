@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 .font-1-s {
   font: 400 1rem "poppins";
@@ -20,13 +20,13 @@
 }
 
 .font-2-s {
-  font: 400 1.25rem/1.75 "NanumGothic";
+  font: 400 1.25rem/1.75 "roboto";
 }
 
 .font-2-s-b {
-  font: 600 1.25rem/1.75 "NanumGothic";
+  font: 700 1.25rem/1.75 "roboto";
 }
 
 .font-2-g {
-  font: 700 5rem "NanumGothic";
+  font: 700 5rem "roboto";
 }

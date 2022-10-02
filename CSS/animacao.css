@@ -31,6 +31,21 @@
   /* overflow: hidden; */
 }
 
+.aurora {
+  opacity: 0.6;
+  width: 150vw;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  filter: blur(40px);
+  z-index: -1;
+  animation-name: zoom, opacity-2;
+  animation-duration: 1s;
+  animation-delay: 0.8s;
+  animation-fill-mode: both;
+}
+
 .container-animacao {
   position: absolute;
   left: 50%;

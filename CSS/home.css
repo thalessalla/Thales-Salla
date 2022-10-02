@@ -20,6 +20,17 @@
   transition-timing-function: ease-out;
 }
 
+/* .aurora {
+  opacity: 0.6;
+  width: 150vw;
+  height: auto;
+  position: absolute;
+  top: 30%;
+  left: -20%;
+  filter: blur(40px);
+  z-index: -1;
+} */
+
 @keyframes pulse {
   from {
     opacity: 1;
@@ -177,6 +188,7 @@
     padding-left: 0px;
     padding-top: 10vh;
     padding-bottom: 30vh;
+    font-size: 50px;
   }
   .redes-home {
     padding-left: 0px;
@@ -194,7 +206,7 @@
     /* font-size: 40px; */
     padding-left: 0px;
     padding-top: 4vh;
-    padding-bottom: 25vh;
+    padding-bottom: 15vh;
   }
   .redes-home {
     padding-left: 0px;
@@ -208,6 +220,12 @@
     width: 80vw;
   }
   .container-animacao {
+    display: none;
+  }
+}
+
+@media (min-width: 381px) {
+  .aurora {
     display: none;
   }
 }

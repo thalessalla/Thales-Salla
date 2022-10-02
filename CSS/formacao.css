@@ -158,7 +158,8 @@
     overflow: visible;
   }
   .esfera {
-    display: none;
+    scale: 50%;
+    top: -100px;
   }
   .coluna-sobre-formacao p {
     /* font-size: 16px; */
@@ -212,8 +213,8 @@
       "um";
   }
   .imagem-abstract img {
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 180px;
+    max-width: 180px;
   }
   .coluna-cursos li {
     background: rgba(255, 255, 255, 0.071);
