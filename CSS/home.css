@@ -12,12 +12,15 @@
   justify-content: center;
   padding-top: 8vh;
   padding-bottom: 8vh;
-  z-index: 100;
+  /* z-index: -100; */
   animation-name: opacity, zoom, blur;
   animation-duration: 1s;
   animation-delay: 1.2s;
   animation-fill-mode: both;
   transition-timing-function: ease-out;
+}
+h1 {
+  z-index: -100;
 }
 
 /* .aurora {
@@ -134,98 +137,75 @@
 
 @media (max-width: 1400px) {
   .bkg-home h1 {
-    /* font-size: 74px; */
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    font-size: 5rem;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
   }
-
   .moldura-home {
     width: 90vw;
   }
 }
-@media (max-width: 1120px) {
+
+@media (max-width: 1180px) {
+  .redes-home {
+    padding-left: 4.5vw;
+  }
   .bkg-home h1 {
-    /* font-size: 54px; */
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    padding-left: 4.5vw;
   }
 }
-@media (max-width: 970px) {
+@media (max-width: 1000px) {
+  .bkg-home h1 {
+    position: absolute;
+    top: 10%;
+    z-index: 20;
+  }
+  .redes-home {
+    position: absolute;
+    bottom: 10%;
+  }
   .moldura-home {
     animation: none;
-  }
-  .bkg-home h1 {
-    padding-left: 100px;
-    display: block;
-  }
-  .redes-home {
-    padding-left: 100px;
-  }
-}
-
-@media (max-width: 760px) {
-  .bkg-home h1 {
-    padding-left: 50px;
-    max-width: 13ch;
-  }
-  .redes-home {
-    padding-left: 50px;
-    width: 10%;
   }
   .bkg-home {
     overflow: hidden;
   }
-  .galaxy {
-    right: -80%;
-  }
   .foto-thales {
     max-height: 400px;
   }
-}
-
-@media (max-width: 590px) {
-  .bkg-home h1 {
-    padding-left: 0px;
-    padding-top: 10vh;
-    padding-bottom: 30vh;
-    font-size: 50px;
-  }
-  .redes-home {
-    padding-left: 0px;
-  }
-}
-
-@media (max-width: 400px) {
-  .container-animacao {
-    display: none;
-  }
-}
-
-@media (max-width: 380px) {
-  .bkg-home h1 {
-    /* font-size: 40px; */
-    padding-left: 0px;
-    padding-top: 4vh;
-    padding-bottom: 15vh;
-  }
-  .redes-home {
-    padding-left: 0px;
-  }
-  .redes-home {
-    padding-left: -20px;
-    width: 8%;
+  .galaxy {
+    right: 0;
   }
   .scroll-down-home {
-    transform: scale(0.8);
-    width: 80vw;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    margin-left: -50px;
   }
-  .container-animacao {
-    display: none;
+}
+@media (max-width: 560px) {
+  .bkg-home h1 {
+    font-size: 3rem;
+    max-width: 13ch;
   }
 }
 
 @media (min-width: 381px) {
   .aurora {
     display: none;
+  }
+}
+
+@media (max-height: 500px) {
+  .bkg-home h1 {
+    font-size: 2rem;
+    padding-top: 20vh;
+  }
+  .redes-home li {
+    width: 20px;
   }
 }

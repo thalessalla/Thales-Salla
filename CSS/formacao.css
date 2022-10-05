@@ -129,21 +129,16 @@
 
 @media (max-width: 1400px) {
   .formacao {
-    margin: 0 20px 0 20px;
+    margin: 0 20px 0 40px;
   }
   .imagem-abstract::after {
+    position: absolute;
     transform: scale(60%);
-    left: 50%;
+    left: 10%;
     top: 450px;
   }
 }
-@media (max-width: 1000px) {
-  .imagem-abstract::after {
-    transform: scale(70%);
-    left: 20%;
-    top: 40%;
-  }
-}
+
 @media (max-width: 700px) {
   .h2-formacao {
     display: inline-block;
@@ -156,10 +151,10 @@
   }
   .formacao {
     overflow: visible;
+    margin: 0 20px 0 20px;
   }
   .esfera {
-    scale: 50%;
-    top: -100px;
+    display: none;
   }
   .coluna-sobre-formacao p {
     /* font-size: 16px; */
