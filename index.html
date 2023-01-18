@@ -6,12 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portifólio Thales Salla</title>
+  <link href="./img/Favicon.svg" rel="shortcut icon" type="image/x-icon">
   <link rel="preload" href="CSS/style.css" as="style">
-  <link rel="preload" href="CSS/home.css" as="style">
   <link rel="preconnect" href="CSS/style.css" as="style">
   <link rel="dns-prefetch" href="CSS/style.css" as="style">
   <link rel="stylesheet" href="CSS/style.css">
-  <link rel="stylesheet" href="CSS/home.css">
 </head>
 
 <body>
@@ -20,10 +19,10 @@
     <div class="menu-scroll">
       <a id="logo-nome" href="#topo"> <img src="./img/Thales-Salla.svg" width="170" height="22" alt="logo Thales" </a>
         <nav class="js-link" id="nav">
-          <button id="btn-mobile" aria-expanded="false">Menu
+          <button id="btn-mobile" aria-label="Abrir Menu" aria-haspopup="true" aria-expanded="false" aria-controls="menu">Menu
             <span id="hamburguer"></span>
           </button>
-          <ul id="menu">
+          <ul id="menu" role="menu">
             <li><a class="hover-underline-animation cor-4 font-1-s" href="#sobre">Sobre mim</a></li>
             <li><a class="hover-underline-animation cor-4 font-1-s" href="#formacao">Formação</a></li>
             <li><a class="hover-underline-animation cor-4 font-1-s" href="#projetos">Projetos</a></li>
@@ -278,12 +277,13 @@
         <div>
           <div class="primeiro-container-projetos">
             <div>
-              <img src="./img/thumb-estudio.webp" alt="miniatura projeto" width="460" height="237">
+              <a href="http://caixarolante.com.br/estudio-na-mao-lp/"> <img src="./img/thumb-estudio.png" alt="" width="460" height="237"></a>
               <h3 class="font-1-m cor-4">Estúdio na mão</h3>
-              <p class=" font-2-s cor-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
+              <p class="font-2-s cor-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
               <p class="font-2-s cor-8 "><span class="cor-4"><strong>Tecnologias usadas no projeto:</strong></span> HTML, CSS E JavaScript </p>
-              <button class="cor-4 font-1-s-b button">Visualizar</button>
+              <a href="http://caixarolante.com.br/estudio-na-mao-lp/" class="cor-4 font-1-s-b button"> Visualizar </a>
             </div>
+
 
 
             <div>
@@ -291,7 +291,7 @@
               <h3 class="font-1-m cor-4">Em breve</h3>
               <p class="font-2-s cor-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
               <p class="font-2-s cor-8 "><span class="cor-4"><strong>Tecnologias usadas no projeto:</strong></span> HTML, CSS E JavaScript </p>
-              <button class="cor-4 font-1-s-b button">Visualizar</button>
+              <a href="#" class="cor-4 font-1-s-b button"> Visualizar </a>
             </div>
 
           </div>
@@ -305,7 +305,7 @@
               <h3 class="font-1-m cor-4">Em breve</h3>
               <p class="font-2-s cor-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
               <p class="font-2-s cor-8 "><span class="cor-4"><strong>Tecnologias usadas no projeto:</strong></span> HTML, CSS E JavaScript </p>
-              <button class="cor-4 font-1-s-b button">Visualizar</button>
+              <a href="#" class="cor-4 font-1-s-b button"> Visualizar </a>
             </div>
 
             <div>
@@ -313,7 +313,7 @@
               <h3 class="font-1-m cor-4">Em breve</h3>
               <p class="font-2-s cor-5">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. </p>
               <p class="font-2-s cor-8 "><span class="cor-4"><strong>Tecnologias usadas no projeto:</strong></span> HTML, CSS E JavaScript </p>
-              <button class="cor-4 font-1-s-b button">Visualizar</button>
+              <a href="#" class="cor-4 font-1-s-b button"> Visualizar </a>
             </div>
           </div>
         </div>
@@ -437,7 +437,7 @@
             </div>
 
             <div class="input-box">
-              <label for="story" class="label-form font-1-s">Mensagem:</label> <br><textarea id="story" name="story" rows="5" cols="33">
+              <label for="story" class="label-form font-1-s">Mensagem:</label> <br><textarea id="story" name="story">
                 </textarea>
             </div>
 

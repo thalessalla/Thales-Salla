@@ -198,6 +198,9 @@ h1 {
   .aurora {
     display: none;
   }
+  .galaxy {
+    width: 180vw;
+  }
 }
 
 @media (max-height: 500px) {

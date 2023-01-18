@@ -1,7 +1,7 @@
 .container-projetos {
   position: relative;
 }
-.container-projetos::before {
+.projetos::before {
   content: "";
   display: inline-block;
   width: 900px;
@@ -51,6 +51,9 @@
   display: flex;
   justify-content: flex-end;
   z-index: 1;
+}
+.visualizar {
+  margin-top: 24px;
 }
 
 /* Responsividade  */

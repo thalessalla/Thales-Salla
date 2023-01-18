@@ -64,6 +64,7 @@ a {
   margin: 0 auto;
 }
 .button {
+  display: inline-block;
   padding: 12px 32px;
   background: linear-gradient(94.41deg, #03318c, #056cf2, #03318c);
   border: none;
@@ -75,6 +76,12 @@ a {
 }
 .button:hover {
   background-position: right;
+}
+a img {
+  transition: 1s;
+}
+a img:hover {
+  opacity: 0.5;
 }
 
 /* Animação carregar pagina */
