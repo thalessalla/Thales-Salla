@@ -37,6 +37,10 @@
   padding: 8px 18px;
 }
 
+#icon-react {
+  background: #949393;
+}
+
 /* Responsivo */
 
 @media (max-width: 1300px) {
