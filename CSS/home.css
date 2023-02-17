@@ -54,7 +54,7 @@ h1 {
 }
 .galaxy {
   position: absolute;
-  right: 0;
+  /* right: 0; */
   bottom: 0;
   z-index: -10;
   animation: zoom 1.5s ease-out;
@@ -63,6 +63,9 @@ h1 {
   width: auto;
   height: 100vh;
   opacity: 0.6;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .redes-home {
   display: flex;
