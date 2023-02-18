@@ -54,13 +54,16 @@ h1 {
 }
 .galaxy {
   position: absolute;
-   /* right: 0;   */
+ /* right: 0;    */
   bottom: 0;
   z-index: -10;
-  animation: zoom 1.5s ease-out;
+  animation: zoomGalaxy 1.5s ease-out;
   transition-timing-function: ease-in-out;
   overflow: hidden;
   opacity: 0.6;
+ left: -50%;
+ top: -50%;
+  scale: .5;
 
 }
 .redes-home {
