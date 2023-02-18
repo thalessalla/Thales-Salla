@@ -54,16 +54,16 @@ h1 {
 }
 .galaxy {
   position: absolute;
- /* right: 0;    */
   bottom: 0;
   z-index: -10;
   animation: zoomGalaxy 1.5s ease-out;
   transition-timing-function: ease-in-out;
   overflow: hidden;
   opacity: 0.6;
- left: -50%;
- top: -50%;
-  scale: .5;
+ scale: .5; 
+  top: -30%;
+    left: -50%;
+    right: -50%;
 
 }
 .redes-home {
@@ -181,6 +181,7 @@ h1 {
   }
   .galaxy {
     right: 0;
+    top: 10%;
   }
   .scroll-down-home {
     position: absolute;
@@ -193,6 +194,12 @@ h1 {
   .bkg-home h1 {
     font-size: 3rem;
     max-width: 13ch;
+  }
+  .galaxy {
+    /* width: 180vw; */
+    height: 80vh;
+    animation: zoom 1.5s ease-out;
+    scale: 1;
   }
 }
 
