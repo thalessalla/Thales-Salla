@@ -159,6 +159,7 @@ a img:hover {
   opacity: 0;
   transform: translate3d(0, 90px, 0);
   transition: 0.8s;
+  
 }
 
 .ativo-scroll {
